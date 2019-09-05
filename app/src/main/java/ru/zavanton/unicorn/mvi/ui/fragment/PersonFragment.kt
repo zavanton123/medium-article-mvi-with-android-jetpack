@@ -1,4 +1,4 @@
-package ru.zavanton.unicorn.mvi.fragment
+package ru.zavanton.unicorn.mvi.ui.fragment
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -13,12 +13,12 @@ import io.reactivex.subjects.PublishSubject
 import io.reactivex.subjects.Subject
 import kotlinx.android.synthetic.main.fmt_person.*
 import ru.zavanton.unicorn.R
-import ru.zavanton.unicorn.mvi.fragment.MviAction.FindAction
-import ru.zavanton.unicorn.mvi.interactor.PersonInteractor
-import ru.zavanton.unicorn.mvi.repository.PersonRepo
-import ru.zavanton.unicorn.mvi.viewModel.PersonViewModel
-import ru.zavanton.unicorn.mvi.viewModel.IPersonViewModel
-import ru.zavanton.unicorn.mvi.viewModel.MviViewState
+import ru.zavanton.unicorn.mvi.ui.fragment.MviAction.FindAction
+import ru.zavanton.unicorn.mvi.business.interactor.PersonInteractor
+import ru.zavanton.unicorn.mvi.data.repository.PersonRepo
+import ru.zavanton.unicorn.mvi.ui.viewModel.PersonViewModel
+import ru.zavanton.unicorn.mvi.ui.viewModel.IPersonViewModel
+import ru.zavanton.unicorn.mvi.ui.viewModel.MviViewState
 
 class PersonFragment : Fragment() {
 

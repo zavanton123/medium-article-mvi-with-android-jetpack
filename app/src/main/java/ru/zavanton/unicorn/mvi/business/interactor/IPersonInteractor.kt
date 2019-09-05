@@ -1,6 +1,7 @@
-package ru.zavanton.unicorn.mvi.interactor
+package ru.zavanton.unicorn.mvi.business.interactor
 
 import io.reactivex.Observable
+import ru.zavanton.unicorn.mvi.business.model.MviChange
 
 interface IPersonInteractor {
 

@@ -1,10 +1,11 @@
-package ru.zavanton.unicorn.mvi.interactor
+package ru.zavanton.unicorn.mvi.business.interactor
 
 import io.reactivex.Observable
-import ru.zavanton.unicorn.mvi.interactor.MviChange.ErrorChange
-import ru.zavanton.unicorn.mvi.interactor.MviChange.NoPersonChange
-import ru.zavanton.unicorn.mvi.interactor.MviChange.PersonChange
-import ru.zavanton.unicorn.mvi.repository.IPersonRepo
+import ru.zavanton.unicorn.mvi.business.model.MviChange
+import ru.zavanton.unicorn.mvi.business.model.MviChange.ErrorChange
+import ru.zavanton.unicorn.mvi.business.model.MviChange.NoPersonChange
+import ru.zavanton.unicorn.mvi.business.model.MviChange.PersonChange
+import ru.zavanton.unicorn.mvi.data.repository.IPersonRepo
 
 class PersonInteractor(
     private val repo: IPersonRepo

@@ -1,9 +1,9 @@
-package ru.zavanton.unicorn.mvi.activity
+package ru.zavanton.unicorn.mvi.ui.activity
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import ru.zavanton.unicorn.R
-import ru.zavanton.unicorn.mvi.fragment.PersonFragment
+import ru.zavanton.unicorn.mvi.ui.fragment.PersonFragment
 
 class MainActivity : AppCompatActivity() {
 

@@ -1,6 +1,7 @@
-package ru.zavanton.unicorn.mvi.repository
+package ru.zavanton.unicorn.mvi.data.repository
 
 import io.reactivex.Single
+import ru.zavanton.unicorn.mvi.data.model.Person
 import java.util.concurrent.TimeUnit
 
 class PersonRepo : IPersonRepo {

@@ -1,4 +1,4 @@
-package ru.zavanton.unicorn.mvi.viewModel
+package ru.zavanton.unicorn.mvi.ui.viewModel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -8,11 +8,11 @@ import io.reactivex.android.schedulers.AndroidSchedulers
 import io.reactivex.disposables.CompositeDisposable
 import io.reactivex.schedulers.Schedulers
 import io.reactivex.subjects.Subject
-import ru.zavanton.unicorn.mvi.fragment.MviAction
-import ru.zavanton.unicorn.mvi.fragment.MviAction.FindAction
-import ru.zavanton.unicorn.mvi.interactor.IPersonInteractor
-import ru.zavanton.unicorn.mvi.interactor.MviChange
-import ru.zavanton.unicorn.mvi.interactor.MviChange.*
+import ru.zavanton.unicorn.mvi.ui.fragment.MviAction
+import ru.zavanton.unicorn.mvi.ui.fragment.MviAction.FindAction
+import ru.zavanton.unicorn.mvi.business.interactor.IPersonInteractor
+import ru.zavanton.unicorn.mvi.business.model.MviChange
+import ru.zavanton.unicorn.mvi.business.model.MviChange.*
 import ru.zavanton.unicorn.mvi.utils.Log
 
 class PersonViewModel(
@@ -72,8 +72,8 @@ class PersonViewModel(
     private fun processFindById(findAction: FindAction) {
         val loadPersonObservable: Observable<MviChange> =
             interactor.fetchPersonById(findAction.id)
-                .observeOn(AndroidSchedulers.mainThread())
                 .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
                 .startWith(LoadingChange)
 
         viewState.value?.apply {

@@ -1,8 +1,8 @@
-package ru.zavanton.unicorn.mvi.viewModel
+package ru.zavanton.unicorn.mvi.ui.viewModel
 
 import androidx.lifecycle.LiveData
 import io.reactivex.subjects.Subject
-import ru.zavanton.unicorn.mvi.fragment.MviAction
+import ru.zavanton.unicorn.mvi.ui.fragment.MviAction
 
 interface IPersonViewModel {
 

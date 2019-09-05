@@ -1,4 +1,4 @@
-package ru.zavanton.unicorn.mvi.repository
+package ru.zavanton.unicorn.mvi.data.model
 
 class Person(
         val firstName: String,

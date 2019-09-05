@@ -1,4 +1,4 @@
-package ru.zavanton.unicorn.mvi.fragment
+package ru.zavanton.unicorn.mvi.ui.fragment
 
 sealed class MviAction {
 

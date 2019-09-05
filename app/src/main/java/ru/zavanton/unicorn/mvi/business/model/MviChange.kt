@@ -1,6 +1,6 @@
-package ru.zavanton.unicorn.mvi.interactor
+package ru.zavanton.unicorn.mvi.business.model
 
-import ru.zavanton.unicorn.mvi.repository.Person
+import ru.zavanton.unicorn.mvi.data.model.Person
 
 sealed class MviChange {
 
